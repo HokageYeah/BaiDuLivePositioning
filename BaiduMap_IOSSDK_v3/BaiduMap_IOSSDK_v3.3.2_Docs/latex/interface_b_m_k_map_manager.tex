@@ -1,0 +1,116 @@
+\hypertarget{interface_b_m_k_map_manager}{}\section{B\+M\+K\+Map\+Manager类 参考}
+\label{interface_b_m_k_map_manager}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+
+
+主引擎类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Map\+Manager.\+h$>$}
+
+类 B\+M\+K\+Map\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_map_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_map_manager_a95edf9c8fea4c61a79098641c4e9a50f}{start\+:general\+Delegate\+:}
+\item 
+(int) -\/ \hyperlink{interface_b_m_k_map_manager_a32730c8339c99d79243e13ba2acee3c3}{get\+Total\+Send\+Flax\+Length}
+\item 
+(int) -\/ \hyperlink{interface_b_m_k_map_manager_a57fcea9612cd09bf8b94bb9e06c7332e}{get\+Total\+Recv\+Flax\+Length}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_map_manager_ac53850202f5017ff35c8933c171be0f1}{stop}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_b_m_k_map_manager_a3de693d719d6e1525e3afa561618afab}{set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:}
+\item 
+(B\+M\+K\+\_\+\+C\+O\+O\+R\+D\+\_\+\+T\+Y\+P\+E) + \hyperlink{interface_b_m_k_map_manager_aeff06053e7c7b7137a83ed06654e9afe}{get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K}
+\item 
+(void) + \hyperlink{interface_b_m_k_map_manager_a3eedc38582f3f34c4a6f464a291472de}{log\+Enable\+:module\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+主引擎类 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_map_manager_aeff06053e7c7b7137a83ed06654e9afe}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K@{get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K}}
+\index{get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K@{get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+M\+K\+\_\+\+C\+O\+O\+R\+D\+\_\+\+T\+Y\+P\+E) get\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_aeff06053e7c7b7137a83ed06654e9afe}
+获取百度地图\+S\+D\+K当前使用的经纬度类型 \begin{DoxyReturn}{返回}
+经纬度类型 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_manager_a57fcea9612cd09bf8b94bb9e06c7332e}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!get\+Total\+Recv\+Flax\+Length@{get\+Total\+Recv\+Flax\+Length}}
+\index{get\+Total\+Recv\+Flax\+Length@{get\+Total\+Recv\+Flax\+Length}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{get\+Total\+Recv\+Flax\+Length}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) get\+Total\+Recv\+Flax\+Length 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_a57fcea9612cd09bf8b94bb9e06c7332e}
+获取所有在线服务消耗的接收流量,单位：字节 \hypertarget{interface_b_m_k_map_manager_a32730c8339c99d79243e13ba2acee3c3}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!get\+Total\+Send\+Flax\+Length@{get\+Total\+Send\+Flax\+Length}}
+\index{get\+Total\+Send\+Flax\+Length@{get\+Total\+Send\+Flax\+Length}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{get\+Total\+Send\+Flax\+Length}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) get\+Total\+Send\+Flax\+Length 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_a32730c8339c99d79243e13ba2acee3c3}
+获取所有在线服务消耗的发送流量,单位：字节 \hypertarget{interface_b_m_k_map_manager_a3eedc38582f3f34c4a6f464a291472de}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!log\+Enable\+:module\+:@{log\+Enable\+:module\+:}}
+\index{log\+Enable\+:module\+:@{log\+Enable\+:module\+:}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{log\+Enable\+:module\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+Enable\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{enable}
+\item[{module:(B\+M\+K\+Map\+Module)}]{map\+Module}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_a3eedc38582f3f34c4a6f464a291472de}
+是否开启打印某模块的log，默认不打印log debug时，建议打开，有利于调试程序；release时建议关闭 
+\begin{DoxyParams}{参数}
+{\em enable} & 是否开启 \\
+\hline
+{\em map\+Module} & 地图模块 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_manager_a3de693d719d6e1525e3afa561618afab}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:@{set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:}}
+\index{set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:@{set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) set\+Coordinate\+Type\+Used\+In\+Baidu\+Map\+S\+D\+K\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+M\+K\+\_\+\+C\+O\+O\+R\+D\+\_\+\+T\+Y\+P\+E)}]{coor\+Type}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_a3de693d719d6e1525e3afa561618afab}
+百度地图\+S\+D\+K所有接口均支持百度坐标（\+B\+D09\+L\+L）和国测局坐标（\+G\+C\+J02），用此方法设置您使用的坐标类型. 默认是\+B\+D09\+L\+L（\+B\+M\+K\+\_\+\+C\+O\+O\+R\+D\+T\+Y\+P\+E\+\_\+\+B\+D09\+L\+L）坐标. 如果需要使用\+G\+C\+J02坐标，需要设置\+Coordinate\+Type为：\+B\+M\+K\+\_\+\+C\+O\+O\+R\+D\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+M\+O\+N. \hypertarget{interface_b_m_k_map_manager_a95edf9c8fea4c61a79098641c4e9a50f}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!start\+:general\+Delegate\+:@{start\+:general\+Delegate\+:}}
+\index{start\+:general\+Delegate\+:@{start\+:general\+Delegate\+:}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{start\+:general\+Delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) start\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{generalDelegate:(id$<$ {\bf B\+M\+K\+General\+Delegate} $>$)}]{delegate}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_a95edf9c8fea4c61a79098641c4e9a50f}
+启动引擎 
+\begin{DoxyParams}{参数}
+{\em key} & 申请的有效key \\
+\hline
+{\em delegate} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_manager_ac53850202f5017ff35c8933c171be0f1}{}\index{B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}!stop@{stop}}
+\index{stop@{stop}!B\+M\+K\+Map\+Manager@{B\+M\+K\+Map\+Manager}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) stop 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_manager_ac53850202f5017ff35c8933c171be0f1}
+停止引擎 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Map\+Manager.\+h\end{DoxyCompactItemize}

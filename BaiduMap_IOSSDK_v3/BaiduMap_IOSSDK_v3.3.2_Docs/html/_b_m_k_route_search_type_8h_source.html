@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v3.3.2 类参考: output/headers/BMKRouteSearchType.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v3.3.2 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKRouteSearchType.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKRouteSearchType.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;CoreLocation/CoreLocation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;BMKPoiSearchType.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKTypes.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BMK_BUSLINE                 = 0,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BMK_SUBWAY                  = 1,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BMK_WAKLING                 = 2,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}BMKTransitStepType;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BMK_TRANSIT_SUBWAY        = 0,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BMK_TRANSIT_TRAIN         = 1,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BMK_TRANSIT_PLANE         = 2,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    BMK_TRANSIT_BUSLINE       = 3,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BMK_TRANSIT_DRIVING       = 4,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BMK_TRANSIT_WAKLING       = 5,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    BMK_TRANSIT_COACH         = 6,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}BMKMassTransitType;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    BMK_INDOOR_STEP_NODE_TYPE_ELEVATOR        = 1,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    BMK_INDOOR_STEP_NODE_TYPE_ESCALATOR       = 2,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    BMK_INDOOR_STEP_NODE_TYPE_STAIR           = 3,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BMK_INDOOR_STEP_NODE_TYPE_SECURITY_CHECK  = 4,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}BMKIndoorStepNodeType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BMK_TRANSIT_TIME_FIRST = 3,     <span class="comment">//较快捷(公交)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    BMK_TRANSIT_TRANSFER_FIRST = 4, <span class="comment">//少换乘(公交)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BMK_TRANSIT_WALK_FIRST = 5,     <span class="comment">//少步行(公交)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    BMK_TRANSIT_NO_SUBWAY = 6,      <span class="comment">//不坐地铁</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}BMKTransitPolicy;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    BMK_MASS_TRANSIT_INCITY_RECOMMEND         = 0,<span class="comment">//推荐</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    BMK_MASS_TRANSIT_INCITY_TRANSFER_FIRST    = 1,<span class="comment">//少换乘</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    BMK_MASS_TRANSIT_INCITY_WALK_FIRST        = 2,<span class="comment">//少步行</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    BMK_MASS_TRANSIT_INCITY_NO_SUBWAY         = 3,<span class="comment">//不坐地铁</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    BMK_MASS_TRANSIT_INCITY_TIME_FIRST        = 4,<span class="comment">//较快捷</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    BMK_MASS_TRANSIT_INCITY_SUBWAY_FIRST      = 5,<span class="comment">//地铁优先</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}BMKMassTransitIncityPolicy;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_TIME_FIRST    = 0,<span class="comment">//较快捷</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_START_EARLY   = 1,<span class="comment">//出发早</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_PRICE_FIRST   = 2,<span class="comment">//价格低</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}BMKMassTransitIntercityPolicy;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_TRANS_TRAIN_FIRST    = 0,<span class="comment">//火车优先</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_TRANS_PLANE_FIRST    = 1,<span class="comment">//飞机优先</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    BMK_MASS_TRANSIT_INTERCITY_TRANS_BUS_FIRST      = 2,<span class="comment">//大巴优先</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}BMKMassTransitIntercityTransPolicy;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    BMK_DRIVING_BLK_FIRST = -1, <span class="comment">//躲避拥堵(自驾)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    BMK_DRIVING_TIME_FIRST = 0, <span class="comment">//最短时间(自驾)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    BMK_DRIVING_DIS_FIRST = 1,  <span class="comment">//最短路程(自驾)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    BMK_DRIVING_FEE_FIRST,      <span class="comment">//少走高速(自驾)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}BMKDrivingPolicy;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BMK_DRIVING_REQUEST_TRAFFICE_TYPE_NONE = 0,                 <span class="comment">//不带路况</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    BMK_DRIVING_REQUEST_TRAFFICE_TYPE_PATH_AND_TRAFFICE = 1,    <span class="comment">//道路和路况</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}BMKDrivingRequestTrafficType;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html">   95</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a> : NSObject</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#a3f7635255548ce4a6baa13c6badc048d">   98</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_taxi_info.html#a3f7635255548ce4a6baa13c6badc048d">desc</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#a0f40d0e207438cb15746b8f5c15dd0c7">  100</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#a0f40d0e207438cb15746b8f5c15dd0c7">distance</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#af327eba903b8dd7873f3edffbc329dcc">  102</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#af327eba903b8dd7873f3edffbc329dcc">duration</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#a8d693347525a761d48f23ddd219b3b8e">  104</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGFloat <a class="code" href="interface_b_m_k_taxi_info.html#a8d693347525a761d48f23ddd219b3b8e">perKMPrice</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#a2029c0f12f76dc5396f4d88df66510f9">  106</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGFloat <a class="code" href="interface_b_m_k_taxi_info.html#a2029c0f12f76dc5396f4d88df66510f9">startPrice</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="interface_b_m_k_taxi_info.html#a4787f76e00a7c1a9cda736bfb9d6bd5e">  108</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#a4787f76e00a7c1a9cda736bfb9d6bd5e">totalPrice</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html">  113</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_vehicle_info.html">BMKVehicleInfo</a> : NSObject{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    NSString* _uid;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    NSString* _title;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span>       _passStationNum;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span>       _totalPrice;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span>       _zonePrice;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html#a17283dfe6370d707ab8a8260b5728428">  121</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* uid;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html#ad188d1a1f9f87b507098f3190275964e">  123</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* title;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html#a328104a4b6f915fe8654325ddd7de287">  125</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> passStationNum;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html#a2167884d0d65e0f1bfa8b51215f31ba2">  127</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#a4787f76e00a7c1a9cda736bfb9d6bd5e">totalPrice</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="interface_b_m_k_vehicle_info.html#ac880b4af4c7e2e9f622720e7488ef3c7">  129</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> zonePrice;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="interface_b_m_k_time.html">  133</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_time.html">BMKTime</a> : NSObject{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">int</span>       _dates;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">int</span>       _hours;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span>       _minutes;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">int</span>       _seconds;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="interface_b_m_k_time.html#a24bb65125c9fd504229a04e616130cb1">  142</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> dates;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="interface_b_m_k_time.html#ae91ad4ffdcb6c8c42a5477199e4947f8">  144</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> hours;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="interface_b_m_k_time.html#a8c39c525065b0fef0983a0feddae471d">  146</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> minutes;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="interface_b_m_k_time.html#a66d0a1c9418ef56ef10ad023513c0f95">  148</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> seconds;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_node.html">  152</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a> : NSObject{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    NSString*              _uid;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    NSString*              _title;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    CLLocationCoordinate2D _location;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_node.html#aaa2aba77525dedcf747e2b3073d0b178">  158</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* uid;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_node.html#a911fa36be5587e1bd9abb6bd9c4e6c2b">  160</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* title;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_node.html#a4e3c2a31a2293b6f600f3b4f9a52a722">  162</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CLLocationCoordinate2D location;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_station.html">  165</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_bus_station.html">BMKBusStation</a> : <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_step.html">  170</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a> : NSObject{</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span>          _distance;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">int</span>          _duration;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>* _points;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">int</span>          _pointsCount;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_step.html#a868b7ecc4313b1c1824a80199012c877">  177</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#a0f40d0e207438cb15746b8f5c15dd0c7">distance</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_step.html#a9c191d3389a169c46e76fb432926855d">  179</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#af327eba903b8dd7873f3edffbc329dcc">duration</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_step.html#aa2faec42865f6254da77039a0729bb6b">  181</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>* points;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_step.html#a58902517ed7dc89918d9b4b9a02dbafa">  183</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> pointsCount;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_step.html">  188</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_bus_step.html">BMKBusStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html">  192</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_transit_step.html">BMKTransitStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a>{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _entrace;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _exit;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    NSString*            _instruction;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    BMKTransitStepType   _stepType;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="interface_b_m_k_vehicle_info.html">BMKVehicleInfo</a>*      _vehicleInfo;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html#a8241c007efc75882537c83cf7c49d403">  200</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* entrace;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html#ab3971103f9cd325a79712eaa09e341f5">  202</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* exit;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html#abb426a15b7ebf35ea6a7aacb87023391">  204</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instruction;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html#a19dc0d26a9b5908704fea8d9a2ea3328">  206</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKTransitStepType stepType;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_step.html#aa8fd99fdc509dbccab356e9388974978">  208</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_vehicle_info.html">BMKVehicleInfo</a>* vehicleInfo;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html">  212</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a> : NSObject</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html#abf404d0f9cc8ccb3974a7f930db15893">  215</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* name;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html#ac8d387f3a66b59f3d355ea33bc6a4fb4">  217</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* departureStation;</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html#a67f395e7136358b2fc8c451017a9d564">  219</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* arriveStation;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html#a3d3126cefa3a187f5d2c42cb525b17a1">  221</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* departureTime;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_vehicle_info.html#aa3265dacbed76d29df3c621aa0217b4a">  223</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* arriveTime;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_vehicle_info.html">  228</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_bus_vehicle_info.html">BMKBusVehicleInfo</a> : <a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_vehicle_info.html#a5998a43e75376ff6bc21634c1aaab0c8">  231</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger passStationNum;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_vehicle_info.html#a8eb3cadea05a4bf0b3fc5eb622de8de9">  233</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* firstTime;</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_vehicle_info.html#a73d609a172b5f8ef3156c95b1e462da6">  235</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* lastTime;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="interface_b_m_k_plane_vehicle_info.html">  239</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_plane_vehicle_info.html">BMKPlaneVehicleInfo</a> : <a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="interface_b_m_k_plane_vehicle_info.html#aeab65e97aaa900da1dc94ed0c5a5b6a6">  242</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat price;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="interface_b_m_k_plane_vehicle_info.html#a50cc7db161ea732bf5c9fcad5fe552b9">  244</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat discount;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="interface_b_m_k_plane_vehicle_info.html#ac47b235b81c00c8ba3e5458ab59d5f09">  246</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* airlines;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="interface_b_m_k_plane_vehicle_info.html#a6cccb2867c9b47825a1fc5949dbfffa2">  248</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* bookingUrl;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="interface_b_m_k_train_vehicle_info.html">  252</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_train_vehicle_info.html">BMKTrainVehicleInfo</a> : <a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="interface_b_m_k_train_vehicle_info.html#af09f5b998223c37bf393a0fe7347460d">  255</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat price;</div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="interface_b_m_k_train_vehicle_info.html#a00f4b1bfb26f1587486be97ee47e4ad1">  257</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* booking;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="interface_b_m_k_coach_vehicle_info.html">  261</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_coach_vehicle_info.html">BMKCoachVehicleInfo</a> : <a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="interface_b_m_k_coach_vehicle_info.html#aae8c6671508efbd5f9687ea4c616c80a">  264</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat price;</div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="interface_b_m_k_coach_vehicle_info.html#a9e6ae5b9e520e09b103437cd174173db">  266</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* bookingUrl;</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="interface_b_m_k_coach_vehicle_info.html#a7981a77e5354fe66cf17170ee7848acf">  268</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* providerName;</div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="interface_b_m_k_coach_vehicle_info.html#aef54879d8f42eadd3904d4db79fb0e3e">  270</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* providerUrl;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_step.html">  275</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_mass_transit_step.html">BMKMassTransitStep</a> : NSObject</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_step.html#a6f19c27cf9772ce8f9f7692468806eef">  277</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL isSubStep;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_step.html#ad8fa3390dabf20772d993f4ec8a5e0be">  279</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray *steps;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html">  284</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_mass_transit_sub_step.html">BMKMassTransitSubStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html#a2feb84fc4b223984a18278b98a19cbd6">  287</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CLLocationCoordinate2D entraceCoor;</div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html#ad75c94c107b74cd5d34df680aad4912e">  289</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CLLocationCoordinate2D exitCoor;</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html#a336b05d67d8dcbc0fb48785fc30a86f1">  291</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instructions;</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html#a01d20b1d6be66036daab4b9b81f17218">  293</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKMassTransitType stepType;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_sub_step.html#a985554c450e971209269c7c088856cae">  295</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a>* vehicleInfo;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html">  300</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_driving_step.html">BMKDrivingStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a>{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">int</span>                  _direction;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _entrace;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    NSString*            _entraceInstruction;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _exit;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    NSString*            _exitInstruction;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    NSString*            _instruction;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">int</span>                  _numTurns;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a32f44a9d4e3bfb73a64a1ac0aa15df7e">  310</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> direction;</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#aaebe4d99c4335c4995d819da68070675">  312</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* entrace;</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#ac795c99a6fe1947752b037792682e29e">  314</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* entraceInstruction;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a18bb9a2457ed65f9c35f2026f45236aa">  316</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* exit;</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a2fd7d4885e56694283f0ed9d92d8b0cd">  318</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* exitInstruction;</div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a70a35973fdc204236c21d44770014989">  320</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instruction;</div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a261507960f7fcf3b6981e9a31667f47c">  322</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> numTurns;</div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a1cfd822349a36e1c6e41fb08f5d7ff2f">  324</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL hasTrafficsInfo;</div>
+<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_step.html#a7bf129fb86628f3c95fe39a268874a74">  326</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* traffics;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_step_node.html">  331</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_indoor_step_node.html">BMKIndoorStepNode</a> : NSObject</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_step_node.html#a35b7fba245e02474addd6eaad473b7f5">  334</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CLLocationCoordinate2D coordinate;</div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_step_node.html#aa347075bde64a982b7ef97549edb6d42">  336</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BMKIndoorStepNodeType type;</div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_step_node.html#a51052d7aaea47ef6ff2e6e54f4729a9e">  338</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_taxi_info.html#a3f7635255548ce4a6baa13c6badc048d">desc</a>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html">  343</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_indoor_route_step.html">BMKIndoorRouteStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#a40e659183af83ecf761d74eebfa79747">  346</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* entrace;</div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#ad966ade18721a679a3bbc3156f228171">  348</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* exit;</div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#a5e730514f37cabdd56e541527f42ccbb">  350</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instructions;</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#ac0cdfb3f2bb8eaa3f8468bd67beef7e5">  352</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* buildingid;</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#a823b40106ed807c3bf65756aeb5b66ec">  354</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* floorid;</div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_step.html#af7bdad4c28e27e7511457d3ad3b1d0a8">  356</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* indoorStepNodes;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html">  361</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_walking_step.html">BMKWalkingStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a>{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">int</span>                  _direction;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _entrace;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    NSString*            _entraceInstruction;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _exit;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    NSString*            _exitInstruction;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    NSString*            _instruction;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#aa26c9684c3570baab3902e6d4f5777a8">  370</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> direction;</div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#a2efa57790c273bcd89f4588d968baaf1">  372</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* entrace;</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#a5e8c407f118c24d8ea4249e405e6a7bd">  374</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* entraceInstruction;</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#a8df8f0b041619898c91290e351313cbe">  376</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* exit;</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#a8c2671c230be07ff75be285089d34665">  378</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* exitInstruction;</div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_step.html#ac55da8a1ca91a2b9d3bce4ddb711cf8e">  380</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instruction;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html">  384</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_riding_step.html">BMKRidingStep</a> : <a class="code" href="interface_b_m_k_route_step.html">BMKRouteStep</a></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#a6249d29c7bd1243e53f7861869741c53">  387</a></span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger direction;</div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#af0ff7d2e58ad89a8b95531615de8a929">  389</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* entrace;</div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#ad372fabc5b2c1ef8367ec1d5e803c9e4">  391</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* entraceInstruction;</div>
+<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#a0b8a55cb04e4887597f0a948d9adf95b">  393</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* exit;</div>
+<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#a822460873606be8265b2625aa2d6835a">  395</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* exitInstruction;</div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_step.html#ab58c6d9f79e5673b4c252d13bc9dd65a">  397</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* instruction;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html">  404</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a> : NSObject{</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordtype">int</span>                  _distance;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="interface_b_m_k_time.html">BMKTime</a>*             _duration;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _starting;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>*        _terminal;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    NSString*            _title;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    NSArray*             _steps;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#a81457e28259f233d070a253369cb08cd">  413</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> <a class="code" href="interface_b_m_k_taxi_info.html#a0f40d0e207438cb15746b8f5c15dd0c7">distance</a>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#a726e651e7f2033fb389655408ea0a0ba">  415</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_time.html">BMKTime</a>* <a class="code" href="interface_b_m_k_taxi_info.html#af327eba903b8dd7873f3edffbc329dcc">duration</a>;</div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#ab4980e956c6a40fb31e99fed60f2f2e3">  417</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* starting;</div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#ad2cecafa2bc1b126cf303600c35c0e8c">  419</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_route_node.html">BMKRouteNode</a>* terminal;</div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#af9634cb2ab0fff868aa5a7ebb394a501">  421</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* title;</div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="interface_b_m_k_route_line.html#a181c231815114b03dfc858ac26a0168a">  423</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* steps;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_line.html">  427</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_transit_route_line.html">BMKTransitRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_line.html">  430</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_mass_transit_route_line.html">BMKMassTransitRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_line.html#ace1c0308bacc0af5ee1bab5993703254">  433</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat price;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_line.html">  437</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_indoor_route_line.html">BMKIndoorRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html">  440</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_driving_route_line.html">BMKDrivingRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a>{</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">bool</span>                 _isSupportTraffic;<span class="comment">//从2.7.0开始，废弃</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    NSArray*             _wayPoints;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;}</div>
+<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html#a23c30bf764fd27531e7f7d1e1cb1d6b4">  445</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">bool</span> isSupportTraffic;</div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html#a577c5a10368ef9c18ac73f20836092bd">  447</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* wayPoints;</div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html#add3683722075ec45112579d495dfd9d3">  449</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger lightNum;</div>
+<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html#af3c2278d3e8c321b7db9116a04449fdc">  451</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger congestionMetres;</div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_line.html#ac5eb8eb15519351fba1f401ab95e480b">  453</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger taxiFares;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_line.html">  458</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_walking_route_line.html">BMKWalkingRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_route_line.html">  462</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_riding_route_line.html">BMKRidingRouteLine</a> : <a class="code" href="interface_b_m_k_route_line.html">BMKRouteLine</a></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00466"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html">  466</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a> : NSObject</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;{</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    NSArray* _startPoiList;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    NSArray* _endPoiList;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    NSArray* _startCityList;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    NSArray* _endCityList;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    NSArray* _wayPointsPoiList;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    NSArray* _wayPointsCityList;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;}</div>
+<div class="line"><a name="l00476"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#aca634e3aa38db8cb6127c080969ad327">  476</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* startPoiList;</div>
+<div class="line"><a name="l00478"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#afdffb61936341d125e268202000ae551">  478</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* startCityList;</div>
+<div class="line"><a name="l00480"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#a4e7a759214b84050b0b47d059eb3ed9d">  480</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* endPoiList;</div>
+<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#a4ab8bde0ab4def7c2de3a57b7447e16a">  482</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* endCityList;</div>
+<div class="line"><a name="l00484"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#aa84760d7426d319275a06d1e2169bb91">  484</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* wayPointPoiList;</div>
+<div class="line"><a name="l00486"></a><span class="lineno"><a class="line" href="interface_b_m_k_suggest_addr_info.html#a3eeadb7f0eaaa514391a7f9565e9029a">  486</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* wayPointCityList;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html">  490</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_bus_line_result.html">BMKBusLineResult</a> : NSObject{</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    NSString* _busCompany;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    NSString* _busLineName;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    NSString* _uid;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    NSString* _startTime;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    NSString* _endTime;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordtype">int</span>       _isMonTicket;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    NSArray*  _busStations;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    NSArray*  _busSteps;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;}</div>
+<div class="line"><a name="l00501"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a7ecd49d7ffa31f0d5b0a3f38c678f2bd">  501</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* busCompany;</div>
+<div class="line"><a name="l00503"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a5bbf221cefe58aa67edf770eaaf23a81">  503</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* busLineName;</div>
+<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#af07c6eef057ecef625cb0dd3cb9787ed">  505</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* busLineDirection;</div>
+<div class="line"><a name="l00507"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#aaa4925efede5021b4c08e6c011a005de">  507</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* uid;</div>
+<div class="line"><a name="l00509"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a884e91eeb4adda0d053fd98b84afa0ba">  509</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* startTime;</div>
+<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#aec007f4464a050b671052ef32abad8f8">  511</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* endTime;</div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a2c311dc1e3378a192ffacdb2c3654ade">  513</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> isMonTicket;</div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a585cbf3524b32eeef7c5d7c6eac1197c">  515</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat basicPrice;</div>
+<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a05aeaebec79e30dc5b1a6f3a9175f439">  517</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CGFloat <a class="code" href="interface_b_m_k_taxi_info.html#a4787f76e00a7c1a9cda736bfb9d6bd5e">totalPrice</a>;</div>
+<div class="line"><a name="l00519"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#a9fe3884161bea9c3955a65eebbb00d70">  519</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* busStations;</div>
+<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="interface_b_m_k_bus_line_result.html#acbb640c72f6b2649ee131c95fd826407">  521</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* busSteps;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
+<div class="line"><a name="l00525"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_result.html">  525</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_walking_route_result.html">BMKWalkingRouteResult</a> : NSObject{</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>*        _taxiInfo;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* _suggestAddrResult;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    NSArray*            _routes;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
+<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_result.html#a64e1ed0711dbed93a53cce9f3fd5b477">  531</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>* taxiInfo;</div>
+<div class="line"><a name="l00533"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_result.html#aa609ce663bd13a0c2a96df209d3adc67">  533</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* suggestAddrResult;</div>
+<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_result.html#a5d3582bcf623a0a164e68d4bc9b329f3">  535</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_result.html">  540</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_driving_route_result.html">BMKDrivingRouteResult</a> : NSObject{</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>*        _taxiInfo;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* _suggestAddrResult;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    NSArray*            _routes;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}</div>
+<div class="line"><a name="l00546"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_result.html#a4dc537f67ed47de78ac3bcda172397dd">  546</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>* taxiInfo;</div>
+<div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_result.html#adf554437aec4884ae9fdc7cdb8fc2625">  548</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* suggestAddrResult;</div>
+<div class="line"><a name="l00550"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_result.html#a448147e99f71f6bf82c93a51dd2d4b81">  550</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_result.html">  554</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_transit_route_result.html">BMKTransitRouteResult</a> : NSObject{</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>*        _taxiInfo;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* _suggestAddrResult;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    NSArray*            _routes;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div>
+<div class="line"><a name="l00560"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_result.html#ae880202db7750ff403011f52fc3b87b7">  560</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>* taxiInfo;</div>
+<div class="line"><a name="l00562"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_result.html#ab5908f0b5471308dbd0ea14618c1b1d6">  562</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* suggestAddrResult;</div>
+<div class="line"><a name="l00564"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_result.html#ad23c905161697d0549715622abd4b400">  564</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
+<div class="line"><a name="l00569"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_result.html">  569</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_mass_transit_route_result.html">BMKMassTransitRouteResult</a> : NSObject</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_result.html#ab8f692336c9ca7acc39bcddc18337333">  572</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* suggestAddrResult;</div>
+<div class="line"><a name="l00574"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_result.html#a51cb21ae8cd500365d304a03a143224a">  574</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00576"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_result.html#a1e67ae5c32c4e30d96297c29de822c70">  576</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger totalRoutes;</div>
+<div class="line"><a name="l00578"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_result.html#a74d045e67138088cd881da0e0912a8d3">  578</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a>* taxiInfo;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_route_result.html">  583</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_riding_route_result.html">BMKRidingRouteResult</a> : NSObject</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
+<div class="line"><a name="l00586"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_route_result.html#a1e326a779869aefdfb79caadf257196e">  586</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a>* suggestAddrResult;</div>
+<div class="line"><a name="l00588"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_route_result.html#ac65cf90b88cbaaddd5cbba7add886eb6">  588</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00593"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_result.html">  593</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_indoor_route_result.html">BMKIndoorRouteResult</a> : NSObject</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_result.html#a8fa81e855b03e0e381391937cc8d228d">  596</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* routes;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_b_m_k_plane_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_plane_vehicle_info.html">BMKPlaneVehicleInfo</a></div><div class="ttdoc">公共交通方案里的交通工具信息类 - 飞机 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:239</div></div>
+<div class="ttc" id="interface_b_m_k_bus_step_html"><div class="ttname"><a href="interface_b_m_k_bus_step.html">BMKBusStep</a></div><div class="ttdoc">此类表示公交线路中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:188</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_step_node_html"><div class="ttname"><a href="interface_b_m_k_indoor_step_node.html">BMKIndoorStepNode</a></div><div class="ttdoc">室内路线结点 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:331</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_a4787f76e00a7c1a9cda736bfb9d6bd5e"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#a4787f76e00a7c1a9cda736bfb9d6bd5e">BMKTaxiInfo::totalPrice</a></div><div class="ttdeci">int totalPrice</div><div class="ttdoc">总价(预估) , 单位： 元 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:108</div></div>
+<div class="ttc" id="interface_b_m_k_bus_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_bus_vehicle_info.html">BMKBusVehicleInfo</a></div><div class="ttdoc">公共交通方案里的交通工具信息类- 公交车、地铁 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:228</div></div>
+<div class="ttc" id="interface_b_m_k_walking_step_html"><div class="ttname"><a href="interface_b_m_k_walking_step.html">BMKWalkingStep</a></div><div class="ttdoc">此类表示步行路线中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:361</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_af327eba903b8dd7873f3edffbc329dcc"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#af327eba903b8dd7873f3edffbc329dcc">BMKTaxiInfo::duration</a></div><div class="ttdeci">int duration</div><div class="ttdoc">总耗时，单位： 秒 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:102</div></div>
+<div class="ttc" id="interface_b_m_k_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_vehicle_info.html">BMKVehicleInfo</a></div><div class="ttdoc">路线换乘方案里的交通工具信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:113</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_line_html"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_line.html">BMKMassTransitRouteLine</a></div><div class="ttdoc">此类表示一条公共交通路线 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:430</div></div>
+<div class="ttc" id="interface_b_m_k_transit_route_result_html"><div class="ttname"><a href="interface_b_m_k_transit_route_result.html">BMKTransitRouteResult</a></div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:554</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_route_step_html"><div class="ttname"><a href="interface_b_m_k_indoor_route_step.html">BMKIndoorRouteStep</a></div><div class="ttdoc">此类表示室内路线的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:343</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_route_line_html"><div class="ttname"><a href="interface_b_m_k_indoor_route_line.html">BMKIndoorRouteLine</a></div><div class="ttdoc">此类表示一个室内路线 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:437</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_result_html"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_result.html">BMKMassTransitRouteResult</a></div><div class="ttdoc">此类表示公共交通路线结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:569</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_a3f7635255548ce4a6baa13c6badc048d"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#a3f7635255548ce4a6baa13c6badc048d">BMKTaxiInfo::desc</a></div><div class="ttdeci">NSString * desc</div><div class="ttdoc">路线打车描述信息 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:98</div></div>
+<div class="ttc" id="interface_b_m_k_riding_step_html"><div class="ttname"><a href="interface_b_m_k_riding_step.html">BMKRidingStep</a></div><div class="ttdoc">此类表示骑行路线中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:384</div></div>
+<div class="ttc" id="interface_b_m_k_driving_route_line_html"><div class="ttname"><a href="interface_b_m_k_driving_route_line.html">BMKDrivingRouteLine</a></div><div class="ttdoc">此类表示一条驾车路线 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:440</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_a2029c0f12f76dc5396f4d88df66510f9"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#a2029c0f12f76dc5396f4d88df66510f9">BMKTaxiInfo::startPrice</a></div><div class="ttdeci">CGFloat startPrice</div><div class="ttdoc">起步价(白天)，单位 元 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:106</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_a8d693347525a761d48f23ddd219b3b8e"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#a8d693347525a761d48f23ddd219b3b8e">BMKTaxiInfo::perKMPrice</a></div><div class="ttdeci">CGFloat perKMPrice</div><div class="ttdoc">每千米单价(白天)，单位 元 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:104</div></div>
+<div class="ttc" id="interface_b_m_k_riding_route_line_html"><div class="ttname"><a href="interface_b_m_k_riding_route_line.html">BMKRidingRouteLine</a></div><div class="ttdoc">此类表示一条骑行路线 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:462</div></div>
+<div class="ttc" id="interface_b_m_k_suggest_addr_info_html"><div class="ttname"><a href="interface_b_m_k_suggest_addr_info.html">BMKSuggestAddrInfo</a></div><div class="ttdoc">路线搜索地址结果类.当输入的起点或终点有多个地点选择时，或者选定的城市没有此地点，但其它城市有(驾乘或�...</div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:466</div></div>
+<div class="ttc" id="interface_b_m_k_route_node_html"><div class="ttname"><a href="interface_b_m_k_route_node.html">BMKRouteNode</a></div><div class="ttdoc">此类表示路线中的一节点，节点包括：路线起终点，公交站点等 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:152</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html"><div class="ttname"><a href="interface_b_m_k_taxi_info.html">BMKTaxiInfo</a></div><div class="ttdoc">打车信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:95</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_sub_step_html"><div class="ttname"><a href="interface_b_m_k_mass_transit_sub_step.html">BMKMassTransitSubStep</a></div><div class="ttdoc">此类表示公共交通路线中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:284</div></div>
+<div class="ttc" id="interface_b_m_k_bus_line_result_html"><div class="ttname"><a href="interface_b_m_k_bus_line_result.html">BMKBusLineResult</a></div><div class="ttdoc">此类表示公共交通信息查询结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:490</div></div>
+<div class="ttc" id="interface_b_m_k_train_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_train_vehicle_info.html">BMKTrainVehicleInfo</a></div><div class="ttdoc">公共交通方案里的交通工具信息类 - 火车 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:252</div></div>
+<div class="ttc" id="interface_b_m_k_coach_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_coach_vehicle_info.html">BMKCoachVehicleInfo</a></div><div class="ttdoc">公共交通方案里的交通工具信息类 - 大巴 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:261</div></div>
+<div class="ttc" id="interface_b_m_k_driving_step_html"><div class="ttname"><a href="interface_b_m_k_driving_step.html">BMKDrivingStep</a></div><div class="ttdoc">此类表示驾车路线中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:300</div></div>
+<div class="ttc" id="interface_b_m_k_time_html"><div class="ttname"><a href="interface_b_m_k_time.html">BMKTime</a></div><div class="ttdoc">此类代表一个时间段，每个属性都是一个时间段。 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:133</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_route_result_html"><div class="ttname"><a href="interface_b_m_k_indoor_route_result.html">BMKIndoorRouteResult</a></div><div class="ttdoc">此类表示室内路线结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:593</div></div>
+<div class="ttc" id="interface_b_m_k_bus_station_html"><div class="ttname"><a href="interface_b_m_k_bus_station.html">BMKBusStation</a></div><div class="ttdoc">此类表示公交站点信息 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:165</div></div>
+<div class="ttc" id="interface_b_m_k_walking_route_result_html"><div class="ttname"><a href="interface_b_m_k_walking_route_result.html">BMKWalkingRouteResult</a></div><div class="ttdoc">此类表示步行路线结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:525</div></div>
+<div class="ttc" id="interface_b_m_k_walking_route_line_html"><div class="ttname"><a href="interface_b_m_k_walking_route_line.html">BMKWalkingRouteLine</a></div><div class="ttdoc">此类表示一条步行路线 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:458</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_step_html"><div class="ttname"><a href="interface_b_m_k_mass_transit_step.html">BMKMassTransitStep</a></div><div class="ttdoc">此类表示公共交通路线中的路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:275</div></div>
+<div class="ttc" id="interface_b_m_k_taxi_info_html_a0f40d0e207438cb15746b8f5c15dd0c7"><div class="ttname"><a href="interface_b_m_k_taxi_info.html#a0f40d0e207438cb15746b8f5c15dd0c7">BMKTaxiInfo::distance</a></div><div class="ttdeci">int distance</div><div class="ttdoc">总路程，单位： 米 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:100</div></div>
+<div class="ttc" id="interface_b_m_k_transit_route_line_html"><div class="ttname"><a href="interface_b_m_k_transit_route_line.html">BMKTransitRouteLine</a></div><div class="ttdoc">此类表示一个换乘路线，换乘路线将根据既定策略调配多种交通工具 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:427</div></div>
+<div class="ttc" id="interface_b_m_k_route_step_html"><div class="ttname"><a href="interface_b_m_k_route_step.html">BMKRouteStep</a></div><div class="ttdoc">此类表示路线中的一个路段（基类） </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:170</div></div>
+<div class="ttc" id="interface_b_m_k_base_vehicle_info_html"><div class="ttname"><a href="interface_b_m_k_base_vehicle_info.html">BMKBaseVehicleInfo</a></div><div class="ttdoc">公共交通方案里的交通工具信息基类类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:212</div></div>
+<div class="ttc" id="interface_b_m_k_transit_step_html"><div class="ttname"><a href="interface_b_m_k_transit_step.html">BMKTransitStep</a></div><div class="ttdoc">此类表示公交换乘路线中的一个路段 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:192</div></div>
+<div class="ttc" id="interface_b_m_k_riding_route_result_html"><div class="ttname"><a href="interface_b_m_k_riding_route_result.html">BMKRidingRouteResult</a></div><div class="ttdoc">此类表示骑行路线结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:583</div></div>
+<div class="ttc" id="interface_b_m_k_driving_route_result_html"><div class="ttname"><a href="interface_b_m_k_driving_route_result.html">BMKDrivingRouteResult</a></div><div class="ttdoc">此类表示驾车路线结果 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:540</div></div>
+<div class="ttc" id="interface_b_m_k_route_line_html"><div class="ttname"><a href="interface_b_m_k_route_line.html">BMKRouteLine</a></div><div class="ttdef"><b>Definition:</b> BMKRouteSearchType.h:404</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html"><div class="ttname"><a href="struct_b_m_k_map_point.html">BMKMapPoint</a></div><div class="ttdoc">地理坐标点，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2017年 五月 17日 星期三 16:37:04 , 为 百度地图SDK for iOS v3.3.2 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

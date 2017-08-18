@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v3.3.2 类参考: output/headers/BMKRouteSearchOption.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v3.3.2 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKRouteSearchOption.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKPoiSearchOption.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2013 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKTypes.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKRouteSearchType.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_route_plan_option.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a> : NSObject</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>        *_from;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>        *_to;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_route_plan_option.html#afb4bc6a8468e1bf3dbb24c86abf06827">   18</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a> *from;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_b_m_k_base_route_plan_option.html#a6a01852ca226bdc1f580bb4a10745c62">   20</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a> *to;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_b_m_k_walking_route_plan_option.html">   23</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_walking_route_plan_option.html">BMKWalkingRoutePlanOption</a> : <a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_plan_option.html">   29</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_driving_route_plan_option.html">BMKDrivingRoutePlanOption</a> : <a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    NSArray*   _wayPointsArray;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BMKDrivingPolicy _drivingPolicy;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray  *wayPointsArray;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_plan_option.html#a51fe8957c72c8d0d478515bd7afa0cfd">   36</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKDrivingPolicy drivingPolicy;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_b_m_k_driving_route_plan_option.html#a89b3bd09b9fbaf62bd06b2309522be1c">   39</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKDrivingRequestTrafficType drivingRequestTrafficType;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_plan_option.html">   44</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_transit_route_plan_option.html">BMKTransitRoutePlanOption</a> : <a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    NSString*               _city;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BMKTransitPolicy        _transitPolicy;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_plan_option.html#ad3060cccd7cae43c4564a42f19b972aa">   50</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString *city;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_b_m_k_transit_route_plan_option.html#a78e87e470653062316a53e6e8e5399e5">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKTransitPolicy transitPolicy;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html">   57</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html">BMKMassTransitRoutePlanOption</a> : <a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html#a42fc52431a6abacdbe595c44471a70ff">   60</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSUInteger <a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html#a42fc52431a6abacdbe595c44471a70ff">pageIndex</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html#af6a4050fc39bcf2a75e4dd0e2666c37e">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSUInteger <a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html#af6a4050fc39bcf2a75e4dd0e2666c37e">pageCapacity</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html#ad452025f756f489075807ab5fcbfadba">   64</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BMKMassTransitIncityPolicy <a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html#ad452025f756f489075807ab5fcbfadba">incityPolicy</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html#a4ac3cc5300e0c422d5a70fd4287fe64b">   66</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BMKMassTransitIntercityPolicy <a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html#a4ac3cc5300e0c422d5a70fd4287fe64b">intercityPolicy</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="interface_b_m_k_mass_transit_route_plan_option.html#ae19aae7860e23063295101f1cc0000d5">   68</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BMKMassTransitIntercityTransPolicy <a class="code" href="interface_b_m_k_mass_transit_route_plan_option.html#ae19aae7860e23063295101f1cc0000d5">intercityTransPolicy</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="interface_b_m_k_riding_route_plan_option.html">   73</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_riding_route_plan_option.html">BMKRidingRoutePlanOption</a> : <a class="code" href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_plan_option.html">   78</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_indoor_route_plan_option.html">BMKIndoorRoutePlanOption</a> : NSObject</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_plan_option.html#ad21e055dd877f009a9c7572858756d8f">   80</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_indoor_plan_node.html">BMKIndoorPlanNode</a> *<a class="code" href="interface_b_m_k_base_route_plan_option.html#afb4bc6a8468e1bf3dbb24c86abf06827">from</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="interface_b_m_k_indoor_route_plan_option.html#a96d88547ebf5ae2c4d023ceb1e8b5658">   82</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_indoor_plan_node.html">BMKIndoorPlanNode</a> *<a class="code" href="interface_b_m_k_base_route_plan_option.html#a6a01852ca226bdc1f580bb4a10745c62">to</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html_ad452025f756f489075807ab5fcbfadba"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html#ad452025f756f489075807ab5fcbfadba">BMKMassTransitRoutePlanOption::incityPolicy</a></div><div class="ttdeci">BMKMassTransitIncityPolicy incityPolicy</div><div class="ttdoc">市内公交换乘策略策略，可选，默认使用BMK_MASS_TRANSIT_INCITY_RECOMMEND </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:64</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html_a4ac3cc5300e0c422d5a70fd4287fe64b"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html#a4ac3cc5300e0c422d5a70fd4287fe64b">BMKMassTransitRoutePlanOption::intercityPolicy</a></div><div class="ttdeci">BMKMassTransitIntercityPolicy intercityPolicy</div><div class="ttdoc">跨城公交换乘策略，可选，默认使用BMK_MASS_TRANSIT_INTERCITY_TIME_FIRST </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:66</div></div>
+<div class="ttc" id="interface_b_m_k_plan_node_html"><div class="ttname"><a href="interface_b_m_k_plan_node.html">BMKPlanNode</a></div><div class="ttdoc">线路检索节点信息,一个路线检索节点可以通过经纬度坐标或城市名加地名确定 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:140</div></div>
+<div class="ttc" id="interface_b_m_k_riding_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_riding_route_plan_option.html">BMKRidingRoutePlanOption</a></div><div class="ttdoc">骑行查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:73</div></div>
+<div class="ttc" id="interface_b_m_k_base_route_plan_option_html_afb4bc6a8468e1bf3dbb24c86abf06827"><div class="ttname"><a href="interface_b_m_k_base_route_plan_option.html#afb4bc6a8468e1bf3dbb24c86abf06827">BMKBaseRoutePlanOption::from</a></div><div class="ttdeci">BMKPlanNode * from</div><div class="ttdoc">检索的起点，可通过关键字、坐标两种方式指定。cityName和cityID同时指定时，优先使用cityID ...</div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:18</div></div>
+<div class="ttc" id="interface_b_m_k_base_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_base_route_plan_option.html">BMKBaseRoutePlanOption</a></div><div class="ttdoc">路线查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:12</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_indoor_route_plan_option.html">BMKIndoorRoutePlanOption</a></div><div class="ttdoc">室内路线规划查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:78</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html_a42fc52431a6abacdbe595c44471a70ff"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html#a42fc52431a6abacdbe595c44471a70ff">BMKMassTransitRoutePlanOption::pageIndex</a></div><div class="ttdeci">NSUInteger pageIndex</div><div class="ttdoc">分页索引，可选，默认为0(从0开始) </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:60</div></div>
+<div class="ttc" id="interface_b_m_k_indoor_plan_node_html"><div class="ttname"><a href="interface_b_m_k_indoor_plan_node.html">BMKIndoorPlanNode</a></div><div class="ttdoc">室内路线检索节点信息 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:157</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html_af6a4050fc39bcf2a75e4dd0e2666c37e"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html#af6a4050fc39bcf2a75e4dd0e2666c37e">BMKMassTransitRoutePlanOption::pageCapacity</a></div><div class="ttdeci">NSUInteger pageCapacity</div><div class="ttdoc">分页数量，可选，默认为10，取值范围[1,10] </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:62</div></div>
+<div class="ttc" id="interface_b_m_k_walking_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_walking_route_plan_option.html">BMKWalkingRoutePlanOption</a></div><div class="ttdoc">步行查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:23</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html_ae19aae7860e23063295101f1cc0000d5"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html#ae19aae7860e23063295101f1cc0000d5">BMKMassTransitRoutePlanOption::intercityTransPolicy</a></div><div class="ttdeci">BMKMassTransitIntercityTransPolicy intercityTransPolicy</div><div class="ttdoc">跨城交通方式策略，可选，默认使用BMK_MASS_TRANSIT_INTERCITY_TRANS_TRAIN_FIRST </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:68</div></div>
+<div class="ttc" id="interface_b_m_k_mass_transit_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_mass_transit_route_plan_option.html">BMKMassTransitRoutePlanOption</a></div><div class="ttdoc">公共交通路线查询基础信息类（支持市内和跨城）(注：起终点城市不支持cityId) </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:57</div></div>
+<div class="ttc" id="interface_b_m_k_base_route_plan_option_html_a6a01852ca226bdc1f580bb4a10745c62"><div class="ttname"><a href="interface_b_m_k_base_route_plan_option.html#a6a01852ca226bdc1f580bb4a10745c62">BMKBaseRoutePlanOption::to</a></div><div class="ttdeci">BMKPlanNode * to</div><div class="ttdoc">检索的终点，可通过关键字、坐标两种方式指定。cityName和cityID同时指定时，优先使用cityID ...</div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:20</div></div>
+<div class="ttc" id="interface_b_m_k_driving_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_driving_route_plan_option.html">BMKDrivingRoutePlanOption</a></div><div class="ttdoc">驾车查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:29</div></div>
+<div class="ttc" id="interface_b_m_k_transit_route_plan_option_html"><div class="ttname"><a href="interface_b_m_k_transit_route_plan_option.html">BMKTransitRoutePlanOption</a></div><div class="ttdoc">公交查询基础信息类 </div><div class="ttdef"><b>Definition:</b> BMKRouteSearchOption.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2017年 五月 17日 星期三 16:37:04 , 为 百度地图SDK for iOS v3.3.2 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

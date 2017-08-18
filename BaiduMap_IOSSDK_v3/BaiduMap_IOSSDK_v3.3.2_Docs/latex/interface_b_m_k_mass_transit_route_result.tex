@@ -1,0 +1,40 @@
+\hypertarget{interface_b_m_k_mass_transit_route_result}{}\section{B\+M\+K\+Mass\+Transit\+Route\+Result类 参考}
+\label{interface_b_m_k_mass_transit_route_result}\index{B\+M\+K\+Mass\+Transit\+Route\+Result@{B\+M\+K\+Mass\+Transit\+Route\+Result}}
+
+
+此类表示公共交通路线结果  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Route\+Search\+Type.\+h$>$}
+
+类 B\+M\+K\+Mass\+Transit\+Route\+Result 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_mass_transit_route_result}
+\end{center}
+\end{figure}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_mass_transit_route_result_ab8f692336c9ca7acc39bcddc18337333}{}\hyperlink{interface_b_m_k_suggest_addr_info}{B\+M\+K\+Suggest\+Addr\+Info} $\ast$ \hyperlink{interface_b_m_k_mass_transit_route_result_ab8f692336c9ca7acc39bcddc18337333}{suggest\+Addr\+Result}\label{interface_b_m_k_mass_transit_route_result_ab8f692336c9ca7acc39bcddc18337333}
+
+\begin{DoxyCompactList}\small\item\em 返回起点或终点的地址信息结果 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_mass_transit_route_result_a51cb21ae8cd500365d304a03a143224a}{}N\+S\+Array $\ast$ \hyperlink{interface_b_m_k_mass_transit_route_result_a51cb21ae8cd500365d304a03a143224a}{routes}\label{interface_b_m_k_mass_transit_route_result_a51cb21ae8cd500365d304a03a143224a}
+
+\begin{DoxyCompactList}\small\item\em 方案数组,成员类型为\+B\+M\+K\+Mass\+Transit\+Route\+Line \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_mass_transit_route_result_a1e67ae5c32c4e30d96297c29de822c70}{}N\+S\+Integer \hyperlink{interface_b_m_k_mass_transit_route_result_a1e67ae5c32c4e30d96297c29de822c70}{total\+Routes}\label{interface_b_m_k_mass_transit_route_result_a1e67ae5c32c4e30d96297c29de822c70}
+
+\begin{DoxyCompactList}\small\item\em 总方案数 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_mass_transit_route_result_a74d045e67138088cd881da0e0912a8d3}{}\hyperlink{interface_b_m_k_taxi_info}{B\+M\+K\+Taxi\+Info} $\ast$ \hyperlink{interface_b_m_k_mass_transit_route_result_a74d045e67138088cd881da0e0912a8d3}{taxi\+Info}\label{interface_b_m_k_mass_transit_route_result_a74d045e67138088cd881da0e0912a8d3}
+
+\begin{DoxyCompactList}\small\item\em 该路线打车信息(只有起终点是大陆地区且是同城的请求时才返回此字段, 否则此字段为nil) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+此类表示公共交通路线结果 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Route\+Search\+Type.\+h\end{DoxyCompactItemize}
